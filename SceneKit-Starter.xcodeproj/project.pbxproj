@@ -12,16 +12,18 @@
 		939A5749227C315500D18A56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939A5747227C315500D18A56 /* Main.storyboard */; };
 		939A574B227C315700D18A56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 939A574A227C315700D18A56 /* Assets.xcassets */; };
 		939A574E227C315700D18A56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939A574C227C315700D18A56 /* LaunchScreen.storyboard */; };
+		939A5757227C329800D18A56 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939A5756227C329800D18A56 /* SceneKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		939A5740227C315500D18A56 /* SceneKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SceneKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		939A5740227C315500D18A56 /* SceneKit-Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SceneKit-Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		939A5743227C315500D18A56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		939A5745227C315500D18A56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		939A5748227C315500D18A56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		939A574A227C315700D18A56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		939A574D227C315700D18A56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		939A574F227C315700D18A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		939A5756227C329800D18A56 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				939A5757227C329800D18A56 /* SceneKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,13 +43,14 @@
 			children = (
 				939A5742227C315500D18A56 /* SceneKit */,
 				939A5741227C315500D18A56 /* Products */,
+				939A5755227C329700D18A56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		939A5741227C315500D18A56 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				939A5740227C315500D18A56 /* SceneKit.app */,
+				939A5740227C315500D18A56 /* SceneKit-Starter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,12 +68,20 @@
 			path = SceneKit;
 			sourceTree = "<group>";
 		};
+		939A5755227C329700D18A56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				939A5756227C329800D18A56 /* SceneKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		939A573F227C315500D18A56 /* SceneKit */ = {
+		939A573F227C315500D18A56 /* SceneKit-Starter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 939A5752227C315700D18A56 /* Build configuration list for PBXNativeTarget "SceneKit" */;
+			buildConfigurationList = 939A5752227C315700D18A56 /* Build configuration list for PBXNativeTarget "SceneKit-Starter" */;
 			buildPhases = (
 				939A573C227C315500D18A56 /* Sources */,
 				939A573D227C315500D18A56 /* Frameworks */,
@@ -79,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = SceneKit;
+			name = "SceneKit-Starter";
 			productName = SceneKit;
-			productReference = 939A5740227C315500D18A56 /* SceneKit.app */;
+			productReference = 939A5740227C315500D18A56 /* SceneKit-Starter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 939A573B227C315500D18A56 /* Build configuration list for PBXProject "SceneKit" */;
+			buildConfigurationList = 939A573B227C315500D18A56 /* Build configuration list for PBXProject "SceneKit-Starter" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				939A573F227C315500D18A56 /* SceneKit */,
+				939A573F227C315500D18A56 /* SceneKit-Starter */,
 			);
 		};
 /* End PBXProject section */
@@ -289,7 +301,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Rawand-saeed.SceneKit";
+				PRODUCT_BUNDLE_IDENTIFIER = "Rawand-saeed.SceneKitStarter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,7 +319,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Rawand-saeed.SceneKit";
+				PRODUCT_BUNDLE_IDENTIFIER = "Rawand-saeed.SceneKitStarter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,7 +329,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		939A573B227C315500D18A56 /* Build configuration list for PBXProject "SceneKit" */ = {
+		939A573B227C315500D18A56 /* Build configuration list for PBXProject "SceneKit-Starter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				939A5750227C315700D18A56 /* Debug */,
@@ -326,7 +338,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		939A5752227C315700D18A56 /* Build configuration list for PBXNativeTarget "SceneKit" */ = {
+		939A5752227C315700D18A56 /* Build configuration list for PBXNativeTarget "SceneKit-Starter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				939A5753227C315700D18A56 /* Debug */,
